@@ -2,7 +2,7 @@
 
 With the help of this program, one is able to download all files required to play all versions of Minecraft: Java Editions available in the official launcher.
 
-It was made for archivation purposes, or cases such if the official servers would get taken offline. This program alone doesn't let anyone play the game without buying it, it is simply an automated downloader of otherwise publically available files. You still need a launcher to be able to play the game, therefore it doesn't enable any form of piracy.
+It was made for archivation purposes, or cases such if the official servers would get taken offline. This program alone doesn't let anyone play the game without buying it, it is simply an automated downloader of otherwise publicly available files. You still need a launcher to be able to play the game, therefore it doesn't enable any form of piracy.
 
 ## Usage
 

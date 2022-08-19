@@ -75,5 +75,5 @@ func RecursiveDownload(url string) {
 }
 
 func main() {
-	RecursiveDownload("https://launchermeta.mojang.com/mc/game/version_manifest.json")
+	RecursiveDownload("https://piston-meta.mojang.com/mc/game/version_manifest.json")
 }

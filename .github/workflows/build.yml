@@ -1,0 +1,34 @@
+name: Build
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.20'
+
+      - name: Build Linux Binary
+        run: |
+          go build -o mcdl main.go
+          
+      - name: Build Windows Binary
+        run: |
+          GOOS=windows GOARCH=amd64 go build -o mcdl.exe main.go
+
+      - name: Upload Linux Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: linux-artifact
+          path: ./mcdl
+          
+      - name: Upload Windows Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: windows-artifact
+          path: ./mcdl.exe

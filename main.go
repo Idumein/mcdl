@@ -68,7 +68,7 @@ func RecursiveDownload(url string) {
 		}
 
 		for _, v := range regexp.MustCompile(`"hash": "(\w*)"`).FindAllSubmatch(body, -1) {
-			Download("http://resources.download.minecraft.net/" + string(v[1][0:2]) + "/" + string(v[1]))
+			Download("https://resources.download.minecraft.net/" + string(v[1][0:2]) + "/" + string(v[1]))
 		}
 	}
 
